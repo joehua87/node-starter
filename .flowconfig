@@ -14,6 +14,4 @@
 [options]
 suppress_comment= \\(.\\|\n\\)*\\$FlowFixMe
 unsafe.enable_getters_and_setters=true
-
-[version]
-0.42.0
+esproposal.export_star_as=enable
