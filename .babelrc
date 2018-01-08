@@ -1,13 +1,11 @@
 {
   "presets": ["@babel/env", "@babel/flow", "@babel/stage-0"],
-  "plugins": [
-    "@babel/transform-runtime"
-  ],
   "env": {
     "test": {
-      "plugins": [
-        "istanbul"
-      ]
+      "plugins": ["istanbul"]
+    },
+    "production": {
+      "plugins": ["@babel/plugin-transform-runtime"]
     }
   }
 }
