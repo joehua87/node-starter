@@ -1,8 +1,7 @@
 {
-  "presets": ["latest", "stage-0"],
+  "presets": ["@babel/env", "@babel/flow", "@babel/stage-0"],
   "plugins": [
-    "transform-runtime",
-    "transform-flow-strip-types"
+    "@babel/transform-runtime"
   ],
   "env": {
     "test": {

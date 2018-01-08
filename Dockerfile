@@ -1,4 +1,4 @@
-FROM joehua/buzz-node
+FROM node
 
 WORKDIR /opt/app
 
