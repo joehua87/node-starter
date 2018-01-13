@@ -7,10 +7,9 @@
     "build": "NODE_ENV=production babel ./src --out-dir ./lib",
     "lint": "eslint src",
     "flow": "flow",
-    "test": "nyc -r text -r lcov npm run test:js",
+    "test": "NODE_ENV=test jest",
     "prepublish": "npm run build",
-    "pretest": "npm run lint && npm run flow",
-    "test:js": "NODE_ENV=test mocha --require @babel/register 'src/**/__test__/*.test.js' -t 10000"
+    "pretest": "npm run lint && npm run flow"
   },
   "files": [
     "bin",
@@ -41,19 +40,18 @@
     "@babel/preset-env": "^7.0.0-beta.36",
     "@babel/preset-flow": "^7.0.0-beta.36",
     "@babel/preset-stage-0": "^7.0.0-beta.36",
-    "@babel/register": "^7.0.0-beta.36",
-    "@babel/runtime": "^7.0.0-beta.36",
+    "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^8.1.2",
-    "babel-plugin-istanbul": "^4.1.5",
+    "babel-jest": "^22.0.6",
     "chai": "^4.1.2",
     "eslint": "^4.15.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-flowtype": "^2.41.0",
     "eslint-plugin-import": "^2.8.0",
     "flow-bin": "^0.63.1",
-    "mkdirp": "^0.5.1",
-    "mocha": "^4.1.0",
-    "nyc": "^11.4.1"
+    "jest": "^22.0.6",
+    "mkdirp": "^0.5.1"
   },
-  "dependencies": {}
+  "dependencies": {
+  }
 }
