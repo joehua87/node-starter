@@ -1,6 +1,5 @@
 // @flow
 
-import { expect } from 'chai'
 import {
   add,
   addAsync,
@@ -8,11 +7,11 @@ import {
 
 describe('add', () => {
   it('add', () => {
-    expect(add(1, 1)).to.equal(2)
+    expect(add(1, 1)).toEqual(2)
   })
 
   it('add async', async () => {
     const result = await addAsync(1, 1)
-    expect(result).to.equal(2)
+    expect(result).toEqual(2)
   })
 })

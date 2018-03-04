@@ -41,3 +41,6 @@ lib
 # Docker yarn cache
 .yarn-cache.tgz
 .docker
+
+# Flow Typed
+flow-typed
