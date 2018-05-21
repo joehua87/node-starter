@@ -9,6 +9,7 @@
     "flow": "flow",
     "flow-typed": "flow-typed install",
     "test": "NODE_ENV=test jest",
+    "test-only": "NODE_ENV=test jest",
     "prepublish": "npm run build",
     "pretest": "npm run lint && npm run flow"
   },
@@ -34,28 +35,27 @@
   },
   "homepage": "https://github.com/joehua87/node-starter#readme",
   "devDependencies": {
-    "@babel/cli": "^7.0.0-beta.40",
-    "@babel/core": "^7.0.0-beta.40",
-    "@babel/node": "^7.0.0-beta.40",
-    "@babel/plugin-transform-runtime": "^7.0.0-beta.40",
-    "@babel/preset-env": "^7.0.0-beta.40",
-    "@babel/preset-flow": "^7.0.0-beta.40",
-    "@babel/preset-stage-0": "^7.0.0-beta.40",
+    "@babel/cli": "^7.0.0-beta.47",
+    "@babel/core": "^7.0.0-beta.47",
+    "@babel/node": "^7.0.0-beta.47",
+    "@babel/plugin-transform-runtime": "^7.0.0-beta.47",
+    "@babel/preset-env": "^7.0.0-beta.47",
+    "@babel/preset-flow": "^7.0.0-beta.47",
     "babel-core": "7.0.0-bridge.0",
-    "babel-eslint": "^8.2.2",
-    "babel-jest": "^22.4.1",
-    "eslint": "^4.18.2",
+    "babel-eslint": "^8.2.3",
+    "babel-jest": "^22.4.4",
+    "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-flowtype": "^2.46.1",
-    "eslint-plugin-import": "^2.9.0",
-    "eslint-plugin-jest": "^21.12.3",
-    "flow-bin": "^0.66.0",
-    "flow-typed": "^2.3.0",
-    "jest": "^22.4.2",
+    "eslint-plugin-flowtype": "^2.46.3",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jest": "^21.15.1",
+    "flow-bin": "0.71.0",
+    "flow-typed": "^2.4.0",
+    "jest": "^22.4.4",
     "mkdirp": "^0.5.1"
   },
   "dependencies": {
-    "@babel/runtime": "^7.0.0-beta.40"
+    "@babel/runtime": "^7.0.0-beta.47"
   },
   "jest": {
     "testPathIgnorePatterns": ["/node_modules/", "/lib/"]
